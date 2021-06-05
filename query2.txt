@@ -1,0 +1,6 @@
+query{
+  getAuthor(id:"KpZUTAShHa0krGF-mLJYf") #replace id with your one
+  {id,authorName,language
+    ,book{name,category}
+  }
+}

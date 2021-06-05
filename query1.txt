@@ -1,0 +1,26 @@
+mutation{
+  createAuthor(input:{
+    authorName:"William Shakespeare"
+    authorCountry:"United Kindom"
+    language:"English"
+    book:[
+      {
+        name:"As You Like It"
+        isbn:448269315
+        price:13
+        category:COMEDIES
+      },{
+        name:"Lover's Complaint"
+        isbn:563289314
+        price:15
+        category:POEMS
+      }
+    ]
+  }){
+    id,
+    authorName,
+    authorCountry,
+    language,
+    book{id,name,category}
+  }
+}
